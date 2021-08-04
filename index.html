@@ -12,80 +12,314 @@
 	<link rel="stylesheet" href="">
 	
 	<!--==================== CSS ====================-->
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 	<!--==================== FONTS ==================-->
-	<link rel="stylesheet" href="fonts/sfmono/sfmono.css" type="text/css" />
-	<link rel="stylesheet" href="fonts/menlo/menlo.css" type="text/css" />
+	<link rel="stylesheet" href="assets/fonts/sfmono/sfmono.css" type="text/css" />
+	<link rel="stylesheet" href="assets/fonts/menlo/menlo.css" type="text/css" />
 
 	<title>Mikey Portfolio Website</title>
 </head>
 <body>
 	<!--==================== HEADER ====================-->
 	<header class="header" id="header">
-		
+		<nav class="nav container">
+			 <a href="#" class="nav__logo">mikey</a>
+
+			 <div class="nav__btns">
+				 <div class="nav__toggle" id="nav-toggle">
+					<i class="uil uil-brightness"></i>
+				 </div>
+			 </div>
+
+		</nav>
 	</header>
 
 	<!--==================== MAIN ====================-->
 	<main class="main">
 		<!--==================== HOME ====================-->
 		<section class="home section" id="home">
-			
-		</section>
+			<div class="home__container container grid">
+				<div class="home__content grid">
+					<div class="home__social">
+						<a href="#" class="home__social-icon">
+							<i class="uil uil-house-user"></i>
+						</a>
+						<a href="#" class="home__social-icon">
+							<i class="uil uil-file-network"></i>
+						</a>
+						<a href="#" class="home__social-icon">
+							<i class="uil uil-cloud-bookmark"></i>
+						</a>
+						<a href="#" class="home__social-icon">
+							<i class="uil uil-files-landscapes-alt"></i>
+						</a>
+					</div>
 
-		<!--==================== ABOUT ====================-->
-		<section class="about section" id="about">
+					<div class="home__img">
+						<svg class="home__blob" viewBox="0 0 175 175" xmlns="http://www.w3.org/2000/svg">
+							<mask id="mask0" mask-type="alpha">
+								<path fill="#BAE6FF" d="M55.9,-31.5C69.8,-8.1,76.8,20.1,66.3,37.4C55.8,54.6,27.9,60.8,0.5,60.5C-27,60.2,-54,53.5,-66,35.4C-78.1,17.2,-75.2,-12.3,-61.7,-35.4C-48.3,-58.6,-24.1,-75.4,-1.6,-74.5C20.9,-73.6,41.9,-54.9,55.9,-31.5Z" transform="translate(100 100)" />
+							</mask>
+							<g mask="url(#mask0)">
+								<path fill="#BAE6FF" d="M55.9,-31.5C69.8,-8.1,76.8,20.1,66.3,37.4C55.8,54.6,27.9,60.8,0.5,60.5C-27,60.2,-54,53.5,-66,35.4C-78.1,17.2,-75.2,-12.3,-61.7,-35.4C-48.3,-58.6,-24.1,-75.4,-1.6,-74.5C20.9,-73.6,41.9,-54.9,55.9,-31.5Z" transform="translate(100 100)" />
+								<img class="home__blob-img" xlink:href="" />
+							</g>
+						</svg>
+					</div>
 
-	
-		</section>
+					<div class="home__data">
+						<h3 class="home__subtitle">Hey there, it's</h3>
+						<h1 class="home__title">Michael Liang</h1>
+						<p class="home__description"></p>
+						<a href="#contact" class="button button--flex">
+							Get in Touch <i class="uil uil-envelopes button__icon"></i>
+						</a>
+					</div>
+				</div>
 
-		<!--==================== SKILLS ====================-->
-		<section class="skills section" id="skills">
-
-
+				<div class="home__scroll">
+					<a href="#qualification" class="home__scroll-button button--flex">
+						<i class="uil uil-mouse-alt home__scroll-mouse"></i>
+						<span class="home__scroll-name">Scroll Down</span>
+						<i class="uil uil-arrow-down home__scroll-arrow"></i>
+					</a>
+				</div>
+			</div>
 		</section>
 
 		<!--==================== QUALIFICATION ====================-->
 		<section class="qualification section">
 
+			<span class="section__subtitle"></span>
+			<div class="qualification__container container">
+				<div class="qualification__tabs">
+					<div class="qualification__button button---flex qualification__active" data-target='#experience'>
+						<i class="uil uil-file-network qualification__icon"></i>
+						Experience
+					</div>
 
-		</section>
+					<div class="qualification__button button---flex" data-target='#skills'>
+						<i class="uil uil-cloud-bookmark qualification__icon"></i>
+						Skills & Interests
+					</div>
+				</div>
 
-		<!--==================== SERVICES ====================-->
-		<section class="services section" id="services">
-			
+				<div class="qualification__sections">
+					<div class="qualification__content qualification__active" data-content id="experience">
+
+						<!--==================== QUALIFICATION 1====================-->
+						<div class="qualification__data">
+							<div>
+								<h3 class="qualification__title">Electrical and Computer Engineering</h3>
+								<span class="qualification__subtitle">Cornell University</span>
+								<div class="qualification__calender">
+									<i class="uil uil-calendar-alt"></i>
+									Matriculated 2020
+								</div>
+							</div>
+
+							<div>
+								<span class="qualification__rounder"></span>
+								<span class="qualification__line"></span>
+							</div>
+
+						</div>
+
+						<!--==================== QUALIFICATION 1====================-->
+						<div class="qualification__data">
+							<div></div>
+							<div>
+								<span class="qualification__rounder"></span>
+								<!-- <span class="qualification__line"></span> -->
+							</div>
+
+							<div>
+								<h3 class="qualification__title">Mechanical Subteam</h3>
+								<span class="qualification__subtitle">Cornell Underwater Autonomous Vehicles</span>
+								<div class="qualification__calender">
+									<i class="uil uil-calendar-alt"></i>
+									11.2020 - Present
+								</div>
+							</div>
+
+						</div>
+						
+					</div>
+
+					<div class="qualification__content" data-content id="skills">
+						<div class="skills__container container grid">
+							<!--==================== SKILLS 1 ====================-->
+							<div class="skills__content skills__close">
+								<div class="skills__header">
+									<i class="uil uil-ruler skills__icon"></i>
+									<div>
+										<h1 class="skills__title">Design</h1>
+									</div>
+
+									<i class="uil uil-angle-double-down skills__arrow"></i>
+								</div>
+
+								<div class="skills__list grid">
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">Adobe Illustrator, Sketchook</h3>
+										</div>
+									</div>
+
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">Figma</h3>
+										</div>
+									</div>
+								
+								</div>
+							</div>
+
+							<!--==================== SKILLS 2 ====================-->
+							<div class="skills__content skills__close">
+								<div class="skills__header">
+									<i class="uil uil-cube skills__icon"></i>
+									<div>
+										<h1 class="skills__title">Modeling</h1>
+									</div>
+
+									<i class="uil uil-angle-double-down skills__arrow"></i>
+								</div>
+
+								<div class="skills__list grid">
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">SOLIDWORKs</h3>
+											<h3 class="skills__description">Certified Professional-Mechanical Design</h3>
+										</div>
+									</div>
+
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">Fusion 360</h3>
+										</div>
+									</div>
+
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">ANSYS Simulation</h3>
+										</div>
+									</div>
+
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">3D Printing</h3>
+										</div>
+									</div>
+								
+								</div>
+							</div>
+
+							<!--==================== SKILLS 3 ====================-->
+							<div class="skills__content skills__close">
+								<div class="skills__header">
+									<i class="uil uil-plug skills__icon"></i>
+									<div>
+										<h1 class="skills__title">Electronics</h1>
+									</div>
+
+									<i class="uil uil-angle-double-down skills__arrow"></i>
+								</div>
+
+								<div class="skills__list grid">
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">LTspice</h3>
+										</div>
+									</div>
+
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">DMMs & Oscilloscopes</h3>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<!--==================== SKILLS 4 ====================-->
+							<div class="skills__content skills__close">
+								<div class="skills__header">
+									<i class="uil uil-brackets-curly skills__icon"></i>
+									<div>
+										<h1 class="skills__title">Automation & Programming</h1>
+									</div>
+
+									<i class="uil uil-angle-double-down skills__arrow"></i>
+								</div>
+
+								<div class="skills__list grid">
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">Python, Java, MATLAB</h3>
+										</div>
+									</div>
+
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">HTML, CSS, JavaScript</h3>
+										</div>
+									</div>
+
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">SwiftUI</h3>
+										</div>
+									</div>
+								
+								</div>
+							</div>
+
+							<!--==================== SKILLS 5 ====================-->
+							<div class="skills__content skills__close">
+								<div class="skills__header">
+									<i class="uil uil-users-alt skills__icon"></i>
+									<div>
+										<h1 class="skills__title">Usability</h1>
+									</div>
+
+									<i class="uil uil-angle-double-down skills__arrow"></i>
+								</div>
+
+								<div class="skills__list grid">
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">Word, Excel, PowerPoint</h3>
+										</div>
+									</div>
+								
+									<div class="skills__data">
+										<div class="skills__titles">
+											<h3 class="skills__name">LaTeX</h3>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
 
 		</section>
 
 		<!--==================== PORTFOLIO ====================-->
 		<section class="portfolio section" id="portfolio">
 			
-
 		</section>
 
-		<!--==================== PROJECT IN MIND ====================-->
-		<section class="project section">
-
-
-		</section>
-
-		<!--==================== TESTIMONIAL ====================-->
-		<section class="testimonial section">
-			
-
-		</section>
-
-		<!--==================== CONTACT ME ====================-->
-		<section class="contact section" id="contact">
-
-
-		</section>
 	</main>
 
 	<!--==================== FOOTER ====================-->
 	<footer class="footer">
-
-		
+		<h3 class="designedby">Redesigned and Built by Mikey</h3>
 	</footer>
 	
 	<!--==================== SCROLL TOP ====================-->
@@ -95,6 +329,6 @@
 	<script src=""></script>
 
 	<!--==================== MAIN JS ====================-->
-	<script src=""></script>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>
