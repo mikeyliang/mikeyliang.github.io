@@ -66,6 +66,7 @@ https://coolors.co/f3f3f3-c9af98-b73225-5cbdb9-004e7c-3a4660-3c4958-283747
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
+    --mb-6: 6rem;
 
     /*========== z index ==========*/
     --z-tooltip: 10;
@@ -278,17 +279,18 @@ section {
 
 .home__title {
     font-size: var(--big-font-size);
-    font-family: "SF Mono Heavy"
+    font-family: "SF Mono Heavy";
+    margin-bottom: var(--mb-2);
 }
 
 .home__subtitle{
     font-size: var(--h3-font-size);
-    color: var(--text-color);
+    color: var(--text-csolor);
     margin-bottom: var(--mb-0-75);
 }
 
 .home__description {
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-3);
 }
 
 .home__scroll {
@@ -327,6 +329,7 @@ section {
     padding: 1.25rem;
     border-radius: 1rem;
     font-weight: var(--font-medium);
+    margin-bottom: var(--mb-6);
 }
 
 .button:hover {
