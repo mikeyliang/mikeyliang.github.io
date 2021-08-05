@@ -267,11 +267,11 @@ section {
     fill: var(--first-color);
 }
 
-/*
+
 .home__blob-img{
-    top: 50%;
+    width: 250px;
 }
-*/
+
 
 .home__data {
     grid-column: 1/7;
@@ -308,6 +308,7 @@ section {
 
 .home__scroll-mouse  {
     font-size: 2rem;
+    padding-right:var(--mb-1);
 }
 
 .home__scroll-name {
@@ -318,7 +319,8 @@ section {
 }
 
 .home__scroll-arrow {
-    font-size: 1.5rem;
+    padding-left: 0.75rem;
+    font-size: 2rem;
 }
 
 /*==================== BUTTONS ====================*/
@@ -340,6 +342,11 @@ section {
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
     transition: .3s;
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
 }
 
 
@@ -536,7 +543,20 @@ section {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+@media screen and (max-width: 350px) {
+    .container {
+        margin-left:  var(--mb-1);
+        margin-right: var(--mb-1);
+    }
 
+    .home__content {
+        grid-template-columns: .25fr 3fr;
+    }
+
+    .qualification__data {
+        gap: .5rem
+    }
+}
 
 /* For medium devices */
 
