@@ -9,8 +9,24 @@
 /* Validate if constant exists */
 
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*==================== SELECTOR HELPER FUNCTION ====================*/
+(function() {
+    "use strict";
 
+    /**
+     * Easy selected helper function
+     * @returns querySelected
+     */
+    const select = (el, all = false) => {
+        el = el.trim()
+        if (all) {
+            return [...document.querySelectorAll(el)]
+        } else {
+            return document.querySelector(el)
+        }
+    }
+
+})
 
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent=document.getElementsByClassName('skills__content'),
@@ -50,22 +66,24 @@ tabs.forEach(tab => {
     })
 })
 
-/*==================== SERVICES MODAL ====================*/
-
+/*==================== TYPED EFFECT ====================*/
+const typed = document.querySelector('#typed')
+if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items')
+    console.log(typed_strings)
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+        strings: typed_strings,
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 2000
+    });
+}
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 
 
-/*==================== TESTIMONIAL ====================*/
-
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
-
-
-/*==================== SHOW SCROLL UP ====================*/ 
 
 
 /*==================== DARK LIGHT THEME ====================*/

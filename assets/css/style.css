@@ -21,7 +21,7 @@ https://coolors.co/f3f3f3-c9af98-b73225-5cbdb9-004e7c-3a4660-3c4958-283747
 
 /*==================== VARIABLES CSS ====================*/
 :root {
-	--header-height: 3rem;
+	--header-height: 4rem;
 
     /*========== Colors ==========*/
     /* Change favorite color */
@@ -103,6 +103,7 @@ body.dark-theme {
 .nav__btns {
     display: flex;
     align-items: center;
+    margin-right: .075fr;
 }
 
 .change-theme {
@@ -154,8 +155,9 @@ img {
 }
 
 section {
-    height: 100vh;
+    min-height: calc(100vh - 3px);
 }
+
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section{
@@ -200,7 +202,6 @@ section {
 
 /*==================== NAV ====================*/
 .nav {
-    max-width: 968px;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
@@ -242,18 +243,44 @@ section {
 }
 
 .home__content{
-    grid-template-columns: .5fr 3fr;
+    grid-template-columns: 30px 1fr 60px;
+
     padding-top: 1.5rem;
     align-items: center;
+    justify-content: center;
 }
 
-.home__social {
+.home__social1 {
+    margin-top: 10vh;
+}
+
+.home__social1, .home__social2 {
     display: grid;
-    grid-template-columns: max-content;
-    row-gap: 1rem;
+    row-gap: 1.5rem;
+    align-items: space-around;
+    height: 80%;
 }
 
-.home__social-icon {
+
+.social__media {
+    display: grid;
+    row-gap: 3rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.email-name {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+}
+
+.email-name:hover {
+    color: var(--first-color)
+}
+
+.home__social-icon, .social__media-icon {
     font-size: 1.5rem;
     color: var(--first-color);
 }
@@ -262,19 +289,22 @@ section {
     color: var(--first-color-alt)
 }
 
+.home__img {
+    margin: auto;
+    display: grid;
+    height: max-content;
+}
+
+
 .home__blob {
-    width: 250px;
+    width: 100%;
     fill: var(--first-color);
 }
 
 
-.home__blob-img{
-    width: 250px;
-}
-
 
 .home__data {
-    grid-column: 1/7;
+    grid-column: auto auto;
 }
 
 .home__title {
@@ -299,11 +329,11 @@ section {
 
 .home__scroll-button {
     color: var(--first-color);
-    transition: .3s;
+    transition: .5s;
 }
 
 .home__scroll-button:hover {
-    transform: translateY(.25rem);
+    transform: translateY(.5rem);
 }
 
 .home__scroll-mouse  {
