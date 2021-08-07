@@ -251,6 +251,10 @@ section {
 }
 
 .home__social1 {
+    margin-top: 15vh;
+}
+
+.home__social2 {
     margin-top: 10vh;
 }
 
@@ -259,6 +263,7 @@ section {
     row-gap: 1.5rem;
     align-items: space-around;
     height: 80%;
+    
 }
 
 
@@ -266,7 +271,7 @@ section {
     display: grid;
     row-gap: 3rem;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 10vh;
 }
 
 .email-name {
@@ -274,6 +279,7 @@ section {
     text-orientation: mixed;
     font-size: var(--h3-font-size);
     color: var(--title-color);
+    margin-top: 5vh;
 }
 
 .email-name:hover {
@@ -310,13 +316,13 @@ section {
 .home__title {
     font-size: var(--big-font-size);
     font-family: "SF Mono Heavy";
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-3);
 }
 
 .home__subtitle{
     font-size: var(--h3-font-size);
     color: var(--text-csolor);
-    margin-bottom: var(--mb-0-75);
+    margin-bottom: var(--mb-1);
 }
 
 .home__description {
@@ -351,6 +357,36 @@ section {
 .home__scroll-arrow {
     padding-left: 0.75rem;
     font-size: 2rem;
+}
+
+
+#container {
+	text-align: center;
+}
+
+#text {
+	display:inline-block;
+	vertical-align: middle;
+	color: var(--text-color);
+	letter-spacing: 2px;
+}
+
+#cursor {
+	display:inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 2vh;
+	background-color: var(--first-color-alt);
+	animation: blink .5s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent ;
+	}
+	50% { 
+		background-color: var(--text-color);
+	}
 }
 
 /*==================== BUTTONS ====================*/
@@ -402,6 +438,10 @@ section {
     margin-right: var(--mb-0-25);
 }
 
+.qualification__sections {
+    margin-top: 10vh;
+}
+
 .qualification__data {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
@@ -419,6 +459,7 @@ section {
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
 }
+
 
 .qualification__calender {
     font-size: var(--small-font-size);
@@ -455,6 +496,8 @@ section {
 
 .skills__container {
     row-gap: 0;
+    justify-content: center;
+    
 }
 
 .skills__header {
@@ -470,7 +513,7 @@ section {
 }
 
 .skills__icon {
-    margin-right: var(--mb-0-75);
+    margin-right: var(--mb-2);
 }
 
 .skills__title {
