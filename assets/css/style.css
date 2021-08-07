@@ -288,12 +288,17 @@ section {
 
 .home__social-icon, .social__media-icon {
     font-size: 1.5rem;
-    color: var(--first-color);
+    color: var(--text-color);
 }
 
 .home__social-icon:hover {
-    color: var(--first-color-alt)
+    color: var(--first-color);
 }
+
+.social__media-icon:hover {
+    color: var(--first-color);
+}
+
 
 .home__img {
     margin: auto;
