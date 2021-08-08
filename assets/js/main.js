@@ -126,8 +126,42 @@ _INTERVAL_VAL = setInterval(Type, 100);
 
 
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+/*==================== PORTFOLIO  ====================*/
 
+const overlay=document.getElementById('cuauvhover')
+const cuauvhover=document.getElementById('cuauvhoverimg')
+const cuauvlogo=document.getElementById('cuauvlogo')
+const portfolionumber1=document.getElementById('portfolionumber1')
+const one=document.getElementById('one');
+
+overlay.addEventListener("mouseenter", () => {
+    cuauvhover.style.transition = "all 0.4s"
+    cuauvhover.style.opacity = "1"
+    portfolionumber1.style.opacity = "1"
+
+    if (document.body.classList.contains(darkTheme)) {
+        one.src="assets/img/cuauvcams/01white.png"
+    } else {
+        one.src="assets/img/cuauvcams/01.png"
+    }
+
+    setTimeout(function(){
+        cuauvhover.style.transition = "all 0.2s"
+        cuauvlogo.style.opacity ="1"
+    }, 100); 
+
+    
+})
+
+overlay.addEventListener("mouseleave", () => {
+    cuauvhover.style.transition = "all 0.4s"
+    cuauvhover.style.opacity = "0"
+    cuauvlogo.style.opacity ="0"
+    portfolionumber1.style.opacity = "0"
+
+    
+
+})
 
 
 
