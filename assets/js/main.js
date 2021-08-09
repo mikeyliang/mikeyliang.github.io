@@ -156,7 +156,7 @@ overlay.addEventListener("mouseenter", () => {
 overlay.addEventListener("mouseleave", () => {
     cuauvhover.style.transition = "all 0.4s"
     cuauvhover.style.opacity = "0"
-    cuauvlogo.style.opacity ="0"
+    cuauvlogo.style.opacity = "0"
     portfolionumber1.style.opacity = "0"
 
     

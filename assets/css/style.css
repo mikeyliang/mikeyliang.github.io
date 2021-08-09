@@ -575,13 +575,39 @@ section {
 
 /*==================== PORTFOLIO ====================*/
 
-.portfolio__image {
-    position: relative;
-    width: 60vw;
-    max-width: max-content;
-    left: 50%;
-    transform: translateX(-50%);
 
+.portfolio__image {
+    position: absolute;
+    width: 40vw;
+    max-width: max-content;
+    left: 25%;
+    transform: translateX(-25%);
+
+}
+
+.image__textbox {
+    position: relative;
+    width: 30vw;
+    height: inherit;
+    left: 85%;
+    transform: translateX(-85%);
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    
+
+}
+
+.image__title {
+    margin: 10px 10px 10px 10px;
+}
+
+.image__text {
+    font-size: var(--smaller-font-size);
+    color: #fff;
+    margin: 10px 10px 10px 10px;
 }
 
 .image__img {
