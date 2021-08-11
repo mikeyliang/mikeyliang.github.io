@@ -129,10 +129,18 @@ _INTERVAL_VAL = setInterval(Type, 100);
 /*==================== PORTFOLIO  ====================*/
 
 const overlay=document.getElementById('cuauvhover')
+const ponddepthoverlay=document.getElementById('ponddepthoverlay')
+
 const cuauvhover=document.getElementById('cuauvhoverimg')
 const cuauvlogo=document.getElementById('cuauvlogo')
 const portfolionumber1=document.getElementById('portfolionumber1')
+
+const ponddepthhover=document.getElementById('ponddepthhoverimg')
+const ponddepthlogo=document.getElementById('ponddepthlogo')
+const portfolionumber2=document.getElementById('portfolionumber2')
+
 const one=document.getElementById('one');
+const two=document.getElementById('two');
 
 overlay.addEventListener("mouseenter", () => {
     cuauvhover.style.transition = "all 0.4s"
@@ -158,9 +166,32 @@ overlay.addEventListener("mouseleave", () => {
     cuauvhover.style.opacity = "0"
     cuauvlogo.style.opacity = "0"
     portfolionumber1.style.opacity = "0"
+})
+
+ponddepthoverlay.addEventListener("mouseenter", () => {
+    ponddepthhover.style.transition = "all 0.4s"
+    ponddepthhover.style.opacity = "1"
+    portfolionumber2.style.opacity = "1"
+
+    if (document.body.classList.contains(darkTheme)) {
+        two.src="assets/img/cuauvcams/02white.png"
+    } else {
+        two.src="assets/img/cuauvcams/02.png"
+    }
+
+    setTimeout(function(){
+        ponddepthhover.style.transition = "all 0.2s"
+        ponddepthlogo.style.opacity ="1"
+    }, 100); 
 
     
+})
 
+ponddepthoverlay.addEventListener("mouseleave", () => {
+    ponddepthhover.style.transition = "all 0.4s"
+    ponddepthhover.style.opacity = "0"
+    ponddepthlogo.style.opacity = "0"
+    portfolionumber2.style.opacity = "0"
 })
 
 

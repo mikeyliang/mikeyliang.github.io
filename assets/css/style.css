@@ -590,33 +590,10 @@ section {
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    gap: 10rem; 
 }
 
-.image__textbox {
-    position: relative;
-    width: 30vw;
-    height: inherit;
-    left: 85%;
-    transform: translateX(-85%);
-    background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    
 
-}
-
-.image__title {
-    margin: 10px 10px 10px 10px;
-}
-
-.image__text {
-    font-size: var(--smaller-font-size);
-    color: #fff;
-    margin: 10px 10px 10px 10px;
-}
 
 .image__img {
     display: block;
@@ -625,6 +602,7 @@ section {
     border-radius: 30px;
     border-style: solid;
     border-width: 5px;
+    background-color: #fff;
 }
 
 .overlay {
@@ -651,6 +629,11 @@ section {
     background-position: -100% 100%;
 }
 
+#ponddepthoverlay:hover {
+    background-position: 100% -100%;
+    
+}
+
 .image__overlay-bottom {
     position: absolute;
     top: 25%;
@@ -665,6 +648,14 @@ section {
 
 }
 
+#ponddepthhoverimg {
+    top: 5%;
+    left: 0;
+    height: 105%;
+    width: 105%;
+}
+
+
 .image__overlay-title {
     position: absolute;
     top: 5%;
@@ -678,29 +669,41 @@ section {
     filter: drop-shadow(5px 5px 10px #222222);
 }
 
+#ponddepthlogo {
+    left: -5%;
+    top:-10%;
+    width: 35%;
+    height: 35%;
+}
+
 .image__overlay-number {
     position: absolute;
     top: -10%;
     left: -5%;
     opacity: 0;
     font-size: 3rem;
-    width:30%;
-    height:30%;
+    width: 30%;
+    height: 30%;
     filter: opacity(0.4) drop-shadow(0 0 0 var(--text-color-light));
     z-index: 10;
     pointer-events: none;
-
     filter: opacity(0.7) drop-shadow(0 0 0 var(--text-color-light));
-    
     transition: 1.5s;
-
 }
 
-.one {
-    -webkit-filter: drop-shadow(5px 5px 10px #222222);
-    filter: drop-shadow(5px 5px 10px #222222);
+#portfolionumber2 {
+    left: 75%
 }
 
+#one {
+    -webkit-filter: drop-shadow(5px 5px 10px var(--text-color));
+    filter: drop-shadow(5px 5px 10px var(--text-color));
+}
+
+#two {
+    -webkit-filter: drop-shadow(5px 5px 10px var(--text-color));
+    filter: drop-shadow(5px 5px 10px var(--text-color));
+}
 
 
 
