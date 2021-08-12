@@ -765,6 +765,36 @@ section {
 }
 
 /* For medium devices */
+@media screen and (max-width: 568px) {
+    .home__data {
+        grid-column: initial;
+    }
 
+
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qualification__sections {
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+}
 
 /* For large devices */
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding: 6rem 0 2rem;
+    }
+}
