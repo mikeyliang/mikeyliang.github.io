@@ -148,9 +148,9 @@ overlay.addEventListener("mouseenter", () => {
     portfolionumber1.style.opacity = "1"
 
     if (document.body.classList.contains(darkTheme)) {
-        one.src="assets/img/cuauvcams/01white.png"
+        one.src="assets/img/num/01white.png"
     } else {
-        one.src="assets/img/cuauvcams/01.png"
+        one.src="assets/img/num/01.png"
     }
 
     setTimeout(function(){
@@ -174,9 +174,9 @@ ponddepthoverlay.addEventListener("mouseenter", () => {
     portfolionumber2.style.opacity = "1"
 
     if (document.body.classList.contains(darkTheme)) {
-        two.src="assets/img/cuauvcams/02white.png"
+        two.src="assets/img/num/02white.png"
     } else {
-        two.src="assets/img/cuauvcams/02.png"
+        two.src="assets/img/num/02.png"
     }
 
     setTimeout(function(){

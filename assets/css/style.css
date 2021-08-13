@@ -66,6 +66,7 @@ https://coolors.co/f3f3f3-c9af98-b73225-5cbdb9-004e7c-3a4660-3c4958-283747
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
+    --mb-4-5: 4.5rem;
     --mb-6: 6rem;
 
     /*========== z index ==========*/
@@ -93,7 +94,7 @@ body.dark-theme {
      --first-color-second: hsl(var(--hue-color), 30%, 10%);
      --title-color: hsl(var(--hue-color), 10%, 95%);
      --text-color: hsl(var(--hue-color), 10%, 75%);
-     --text-color-light: hsl(var(--hue-color), 10%, 90%);
+     --text-color-light: hsl(var(--hue-color), 20%, 80%);
      --input-color: hsl(var(--hue-color), 30%, 15%);
      --body-color: hsl(var(--hue-color), 30%, 10%);
      --container-color: hsl(var(--hue-color), 30%, 15%);
@@ -159,6 +160,19 @@ section {
     min-height: calc(100vh - 3px);
 }
 
+.vertical {
+            border-left: 2px solid var(--text-color-light);
+            height: 45vh;
+            position:relative;
+            border-radius: 3px;
+            left:45%;
+            margin-top: 50px;
+            
+}
+
+#line2 {
+    height: 55vh
+}
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section{
@@ -244,41 +258,41 @@ section {
 }
 
 .home__content{
-    grid-template-columns: 30px 1fr 60px;
-
+    grid-template-columns: 50px 1fr 50px;
+    row-gap: 1px;
     padding-top: 1.5rem;
-    align-items: center;
     justify-content: center;
 }
 
-.home__social1 {
-    margin-top: 15vh;
+
+.line1, .line2 {
+    height: 50vh;
 }
 
-.home__social2 {
-    margin-top: 10vh;
-}
-
-.home__social1, .home__social2 {
-    display: grid;
-    row-gap: 1.5rem;
-    align-items: space-around;
-    height: 80%;
-    
-}
 
 
 .social__media {
-    display: grid;
+    display: flex;
     row-gap: 3rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-2);   
+    height: 35vh;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: var(--mb-4-5);
 }
 
 .email-name {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    font-size: var(--h3-font-size);
+    font-size: var(--h6-font-size);
     color: var(--title-color);
     margin-top: 5vh;
 }
@@ -288,7 +302,7 @@ section {
 }
 
 .home__social-icon, .social__media-icon {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--text-color);
 }
 
@@ -372,14 +386,14 @@ section {
 
 #text {
 	display:inline-block;
-	vertical-align: middle;
+	vertical-align: text-top;
 	color: var(--text-color);
 	letter-spacing: 2px;
 }
 
 #cursor {
 	display:inline-block;
-	vertical-align: middle;
+	vertical-align: text-top;
 	width: 3px;
 	height: 2vh;
 	background-color: var(--first-color-alt);
@@ -403,7 +417,7 @@ section {
     padding: 1.25rem;
     border-radius: 1rem;
     font-weight: var(--font-medium);
-    margin-bottom: var(--mb-6);
+    margin-bottom: var(--mb-4-5);
 }
 
 .button:hover {
@@ -749,6 +763,7 @@ section {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+
 @media screen and (max-width: 350px) {
     .container {
         margin-left:  var(--mb-1);
@@ -760,16 +775,67 @@ section {
     }
 
     .qualification__data {
-        gap: .5rem
+        gap: .5rem;
+    }
+
+    #line1, #line2 {
+        display: none;
+    }
+
+    .social__media, .email-name {
+        display: none;
+    }
+
+    .home__data {
+        order: 5;
     }
 }
 
 /* For medium devices */
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 720px) {
     .home__data {
         grid-column: initial;
+        order: 5;
     }
 
+
+    .skills__container {
+
+    }
+
+    .qualification__sections {
+        display: grid;
+        grid-template-columns: .8fr;
+        justify-content: center;
+    }
+
+    #line1, #line2 {
+        display: none;
+    }
+
+    .social__media, .email-name {
+        display:none;
+    }
+}
+
+/* For large devices */
+
+@media screen and (max-width: 1023px) {
+
+
+
+    .skills__container {
+        
+    }
+
+    .qualification__sections {
+        display: grid;
+        grid-template-columns: .8fr;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
 
     .skills__container {
         grid-template-columns: repeat(2, 1fr);
@@ -777,24 +843,7 @@ section {
 
     .qualification__sections {
         display: grid;
-        grid-template-columns: .6fr;
+        grid-template-columns: .8fr;
         justify-content: center;
-    }
-}
-
-/* For large devices */
-
-@media screen and (min-width: 768px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    body {
-        margin: 0;
-    }
-
-    .section {
-        padding: 6rem 0 2rem;
     }
 }
