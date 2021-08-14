@@ -314,6 +314,14 @@ section {
     color: var(--first-color);
 }
 
+#linkedin, #github {
+    position: absolute;
+    width: 2.25rem;
+    height: 2.25rem;
+    transform: translate(-75%,-25%);
+
+
+}
 
 .home__img {
     margin: auto;
