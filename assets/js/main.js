@@ -1,5 +1,4 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
-
+/*==================== SOCIAL ICON SHOW ====================*/
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
@@ -184,7 +183,6 @@ ponddepthoverlay.addEventListener("mouseenter", () => {
         ponddepthlogo.style.opacity ="1"
     }, 100); 
 
-    
 })
 
 ponddepthoverlay.addEventListener("mouseleave", () => {

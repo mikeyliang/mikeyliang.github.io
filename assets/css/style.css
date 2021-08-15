@@ -165,13 +165,24 @@ section {
             height: 45vh;
             position:relative;
             border-radius: 3px;
-            left:45%;
             margin-top: 50px;
             
 }
 
+#line1 {
+    top: 3rem;
+    height: 45vh;
+    position: fixed;
+    left: 3rem;
+    z-index: 100;
+}
+
 #line2 {
-    height: 55vh
+    top: 3rem;
+    height: 55vh;
+    position: fixed;
+    right: 1.5rem;
+    z-index: 100;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
@@ -258,20 +269,19 @@ section {
 }
 
 .home__content{
-    grid-template-columns: 50px 1fr 50px;
-    row-gap: 1px;
     padding-top: 1.5rem;
     justify-content: center;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-2);
 }
 
 
-.line1, .line2 {
-    height: 50vh;
-}
+
 
 
 
 .social__media {
+    position: fixed;
     display: flex;
     row-gap: 3rem;
     flex-direction: column;
@@ -279,14 +289,21 @@ section {
     margin-top: var(--mb-2);
     margin-bottom: var(--mb-2);   
     height: 35vh;
+    top: 57%;
+    left: 2.5rem;
+    z-index: 100;
 }
 
 .email {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: var(--mb-4-5);
+    z-index: 100;
+    right: 1rem;
+    top: 67.5%;
+    z-index: 100;
 }
 
 .email-name {
@@ -306,22 +323,22 @@ section {
     color: var(--text-color);
 }
 
-.home__social-icon:hover {
-    color: var(--first-color);
-}
 
-.social__media-icon:hover {
-    color: var(--first-color);
-}
 
-#linkedin, #github {
-    position: absolute;
+#linkedin-img, #github-img, #instagram-img, #facebook-img {
+    position: fixed;
     width: 2.25rem;
     height: 2.25rem;
-    transform: translate(-75%,-25%);
-
+    transform: translate(-75%,-20%);
+    opacity: 0;
+    transition: all 0.4s ease;
 
 }
+#linkedin-img:hover, #github-img:hover, #instagram-img:hover, #facebook-img:hover {
+    opacity: 1;
+}
+
+
 
 .home__img {
     margin: auto;
@@ -445,6 +462,10 @@ section {
 
 
 /*==================== QUALIFICATION ====================*/
+.qualification__container {
+    transform: translateY(25%);
+}
+
 .qualification__tabs {
     display: flex;
     justify-content: space-evenly;
@@ -523,8 +544,11 @@ section {
 }
 
 .skills__container {
-    row-gap: 0;
+    row-gap: 1rem;
+    column-gap: 10vw;
     justify-content: center;
+    margin-left: var(--mb-6);
+    margin-right: var(--mb-6);
 
     /** flex-wrap: wrap;
     display: flex;
@@ -545,7 +569,7 @@ section {
 }
 
 .skills__icon {
-    margin-right: var(--mb-2);
+    margin-right: var(--mb-3);
 }
 
 .skills__title {
@@ -553,19 +577,20 @@ section {
 }
 
 .skills__arrow {
-    margin-left: auto;
+    margin-left: var(--mb-3);
     transition: .4s;
 }
 
 .skills__titles {
     display: inline-block;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: var(--mb-0-5);
 }
 
 .skills__name {
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
+    margin-right: var(--mb-1-5);
     margin-bottom: var(--mb-0-25);
 }
 
@@ -600,10 +625,12 @@ section {
 
 
 /*==================== PORTFOLIO ====================*/
-
+.portfolio__title {
+    font-family: "SF Mono Heavy";
+}
 
 .portfolio__image {
-    width: 60vw;
+    width: 55vw;
     position: relative;
 
 }
@@ -735,6 +762,7 @@ section {
     text-align: center;
     font-size: var(--smaller-font-size);
     font-weight: var(--font-semi-bold);
+    margin-top: var(--mb-6);
 }
 
 
@@ -841,6 +869,8 @@ section {
         grid-template-columns: .8fr;
         justify-content: center;
     }
+
+    
 }
 
 @media screen and (min-width: 1024px) {
@@ -854,4 +884,10 @@ section {
         grid-template-columns: .8fr;
         justify-content: center;
     }
+
+    .portfolio__image {
+        width: 40vw;
+    }
+
+
 }
