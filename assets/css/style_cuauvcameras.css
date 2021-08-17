@@ -245,20 +245,33 @@ section {
 
 /*==================== HOME ====================*/
 
-
-.home__container {
-    gap: 1rem;
+.home__data {
+    
+    padding-left: var(--mb-3);
+    padding-right: var(--mb-3);
 }
 
-.home__content{
-    padding-top: 1.5rem;
+.title {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-2);
+    row-gap: 20vw;
 }
 
+.title__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
+.title__img {
+    max-width: 40vw;
+    height: auto;
+}
 
+.subtitle {
+    font-size: var(--normal-font-size);
+}
 
 
 
@@ -320,101 +333,6 @@ section {
     opacity: 1;
 }
 
-
-
-.home__img {
-    margin: auto;
-    display: grid;
-    height: max-content;
-}
-
-
-.home__blob {
-    width: 100%;
-    fill: #BAE6FF;
-}
-
-
-
-.home__data {
-    grid-column: auto auto;
-}
-
-.home__title {
-    font-size: var(--big-font-size);
-    font-family: "SF Mono Heavy";
-    margin-bottom: var(--mb-3);
-}
-
-.home__subtitle{
-    font-size: var(--h3-font-size);
-    color: var(--text-csolor);
-    margin-bottom: var(--mb-1);
-}
-
-.home__description {
-    margin-bottom: var(--mb-3);
-}
-
-.home__scroll {
-    /* display: none; */
-}
-
-.home__scroll-button {
-    color: var(--first-color);
-    transition: .5s;
-}
-
-.home__scroll-button:hover {
-    transform: translateY(.5rem);
-}
-
-.home__scroll-mouse  {
-    font-size: 2rem;
-    padding-right:var(--mb-1);
-}
-
-.home__scroll-name {
-    font-size: var(--small-font-size);
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    margin-right: var(--mb-0-25);
-}
-
-.home__scroll-arrow {
-    padding-left: 0.75rem;
-    font-size: 2rem;
-}
-
-
-#container {
-	text-align: center;
-}
-
-#text {
-	display:inline-block;
-	vertical-align: text-top;
-	color: var(--text-color);
-	letter-spacing: 2px;
-}
-
-#cursor {
-	display:inline-block;
-	vertical-align: text-top;
-	width: 3px;
-	height: 2vh;
-	background-color: var(--first-color-alt);
-	animation: blink .5s step-end infinite;
-}
-
-@keyframes blink {
-	from, to { 
-		background-color: transparent ;
-	}
-	50% { 
-		background-color: var(--text-color);
-	}
-}
 
 
 
