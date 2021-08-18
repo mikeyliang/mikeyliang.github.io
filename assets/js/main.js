@@ -211,7 +211,6 @@ if (selectedTheme) {
     if (selectedIcon == darkiconTheme) {
         document.body.classList.toggle(darkTheme)
         themeButton.classList.replace(darkiconTheme, lighticonTheme)
-
         logo.src = "assets/img/mlwhite.png"
     }
 }
@@ -221,7 +220,6 @@ themeButton.addEventListener('click', () => {
         document.body.classList.toggle(darkTheme)
         localStorage.setItem('selected-theme', 'light')
         localStorage.setItem('selected-icon', lighticonTheme)
-
         logo.src = "assets/img/ml.png"
     } else {
         document.body.classList.toggle(darkTheme)
