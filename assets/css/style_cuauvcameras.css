@@ -292,12 +292,43 @@ section {
 }
 
 .project__exposure {
-    font-size: var(--normal-font-size);
+    font-size: var(--h3-font-size);
 }
 
 .project__time {
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1-5);
+}
+
+.project__skills-img {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.solidworks {
+    width: 30vw;
+    height: auto;
+    margin-top: -1rem;
+}
+
+.latex {
+    width: 11vw;
+    height: auto;
+}
+
+.ansys {
+    width: 15vw;
+    height: auto;
+}
+
+.fusion {
+    width:30vw;
+    height: auto;
 }
 
 .social__media {
