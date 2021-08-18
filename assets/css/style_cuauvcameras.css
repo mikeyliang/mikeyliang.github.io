@@ -249,6 +249,7 @@ section {
     
     padding-left: var(--mb-3);
     padding-right: var(--mb-3);
+    position: relative;
 }
 
 .title {
@@ -284,7 +285,10 @@ section {
     font-size: var(--h6-font-size);
     font-family: "Monaco", monospace;
     font-style: italic;
-    margin: 2rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .project__madeby {
@@ -303,17 +307,19 @@ section {
 .project__skills-img {
     display: flex;
     flex-direction: row;
-    gap: 5vw;
+    column-gap: 5vw;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .solidworks {
     width: 30vw;
     height: auto;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .latex {
@@ -327,8 +333,30 @@ section {
 }
 
 .fusion {
-    width:30vw;
+    width:15vw;
     height: auto;
+}
+
+.illustrator {
+    width: 7.5vw;
+    height: auto;
+}
+
+.tortoise {
+    width: 15vw;
+    height: auto;
+    margin-left: var(--mb-1);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-2);
+}
+
+.horizontal {
+    border-top: 2px solid var(--text-color-light);
+    border-radius: 5px;
+    width: 60vw;
+    position: relative;
+    text-align: center;
+    margin-top: var(--mb-1-5);
 }
 
 .social__media {
@@ -389,6 +417,28 @@ section {
     opacity: 1;
 }
 
+/*========== SCROLL BAR ==========*/
+/* total width */
+::-webkit-scrollbar {
+    background-color: var(--body-color);
+    width:16px
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+    background-color:var(--body-color)
+}
+
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+    background-color:#babac0;
+    border-radius:16px;
+    border:5px solid var(--body-color);
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {display:none}
 
 
 
