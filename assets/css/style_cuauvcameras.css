@@ -297,11 +297,13 @@ section {
 
 .project__exposure {
     font-size: var(--h3-font-size);
+    margin-top: var(--mb-2);
 }
 
 .project__time {
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1-5);
+    font-style: italic;
 }
 
 .project__skills-img {
@@ -351,9 +353,9 @@ section {
 }
 
 .horizontal {
-    border-top: 2px solid var(--text-color-light);
+    border-top: 1px solid var(--text-color-light);
     border-radius: 5px;
-    width: 60vw;
+    width: 70vw;
     position: relative;
     text-align: center;
     margin-top: var(--mb-1-5);
