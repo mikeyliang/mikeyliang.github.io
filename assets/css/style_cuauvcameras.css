@@ -352,7 +352,6 @@ section {
     margin-bottom: var(--mb-2);
 }
 
-
 .horizontal {
     border-top: 1px solid var(--text-color-light);
     border-radius: 5px;
@@ -362,12 +361,6 @@ section {
     margin-top: var(--mb-1-5);
 }
 
-.design__cycle-img {
-    align-content: center;
-    background-size: auto;
-    width: 50vw;
-    content: url("../img/cuauvcams/designcyclevertical.jpg")
-}
 
 .social__media {
     position: fixed;
@@ -427,6 +420,39 @@ section {
     opacity: 1;
 }
 
+
+/*=========== Project Description ===========*/
+.project__description {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    column-gap: var(--mb-4-5)
+}
+
+
+.design__cycle {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: var(--mb-3);
+    
+}
+
+.design__cycle-title {
+    font-size: var(--h2-font-size);
+    font-family: "SF Mono Heavy";
+}
+
+.design__cycle-img {
+    content: url("../img/cuauvcams/designcyclevertical.jpg");
+    width: 50vw;
+    margin-top: var(--mb-4-5);
+    margin-bottom: var(--mb-4-5);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 1px;
+}
+
 /*========== SCROLL BAR ==========*/
 /* total width */
 ::-webkit-scrollbar {
@@ -469,8 +495,6 @@ section {
         display: none;
     }
 
-    
-
 }
 
 /* For medium devices */
@@ -478,7 +502,9 @@ section {
 
 
 
+    .skills__container {
 
+    }
 
 
 
