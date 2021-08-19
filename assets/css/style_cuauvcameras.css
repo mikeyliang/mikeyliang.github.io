@@ -352,6 +352,7 @@ section {
     margin-bottom: var(--mb-2);
 }
 
+
 .horizontal {
     border-top: 1px solid var(--text-color-light);
     border-radius: 5px;
@@ -359,6 +360,13 @@ section {
     position: relative;
     text-align: center;
     margin-top: var(--mb-1-5);
+}
+
+.design__cycle-img {
+    align-content: center;
+    background-size: auto;
+    width: 50vw;
+    content: url("../img/cuauvcams/designcyclevertical.jpg")
 }
 
 .social__media {
@@ -461,6 +469,8 @@ section {
         display: none;
     }
 
+    
+
 }
 
 /* For medium devices */
@@ -468,9 +478,7 @@ section {
 
 
 
-    .skills__container {
 
-    }
 
 
 
