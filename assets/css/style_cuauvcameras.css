@@ -453,6 +453,30 @@ section {
     border-width: 1px;
 }
 
+.design__overview-img {
+    width: 50vw;
+    height: auto;
+}
+
+.design__overview {
+    
+}
+
+.design__overview-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.design__overview-subtitle {
+    font-size: var(--h3-font-size);
+    font-family: "SF Mono Bold";
+}
+
+.ddesign__overview-description {
+    font-size: var(--small-font-size);
+    font-family: "SF Mono";
+    
+}
 /*========== SCROLL BAR ==========*/
 /* total width */
 ::-webkit-scrollbar {
