@@ -459,12 +459,26 @@ section {
 }
 
 .design__overview {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--mb-2);
+    margin-top: var(--mb-3);
+    margin-bottom: var(--mb-3);
+}
+
+.design__overview-title {
+    font-family: "SF Mono Heavy";
+    margin-bottom: var(--mb-3);
 }
 
 .design__overview-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: var(--mb-2);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
 }
 
 .design__overview-subtitle {
@@ -472,11 +486,116 @@ section {
     font-family: "SF Mono Bold";
 }
 
-.ddesign__overview-description {
+.design__overview-description {
     font-size: var(--small-font-size);
     font-family: "SF Mono";
-    
+    margin-left: var(--mb-4-5);
+    margin-right: var(--mb-4-5);
+    margin-bottom: var(--mb-2);
 }
+
+.design__newfeature-img {
+    width: 50vw;
+    height: auto;
+}
+
+.design__newfeatures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--mb-2);
+    margin-top: var(--mb-3);
+    margin-bottom: var(--mb-3);
+}
+
+.design__newfeature-title {
+    font-family: "SF Mono Heavy";
+    margin-bottom: var(--mb-3);
+}
+
+.design__newfeature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--mb-2);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
+
+.design__newfeature-subtitle {
+    font-size: var(--h3-font-size);
+    font-family: "SF Mono Bold";
+}
+
+.design__newfeature-description {
+    font-size: var(--small-font-size);
+    font-family: "SF Mono";
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+    margin-bottom: var(--mb-2);
+}
+
+.design__futureimprovements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--mb-2);
+    margin-top: var(--mb-3);
+    margin-bottom: var(--mb-3);
+}
+
+.design__futureimprovements-title {
+    font-family: "SF Mono Heavy";
+    margin-bottom: var(--mb-3);
+}
+
+.design__futureimprovements-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--mb-2);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
+
+.design__futureimprovements-subtitle {
+    font-size: var(--h3-font-size);
+    font-family: "SF Mono Bold";
+    margin-bottom: var(--mb-1-5);
+}
+
+.design__futureimprovements-description {
+    font-size: var(--small-font-size);
+    font-family: "SF Mono";
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+    margin-bottom: var(--mb-2);
+}
+
+.downloadables {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--mb-2);
+    margin-top: var(--mb-3);
+    margin-bottom: var(--mb-3);
+}
+
+.downloadables-title {
+    font-family: "SF Mono Heavy";
+    margin-bottom: var(--mb-3);
+}
+
+.downloadables-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--mb-2);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
+
+
 /*========== SCROLL BAR ==========*/
 /* total width */
 ::-webkit-scrollbar {
@@ -509,8 +628,6 @@ section {
         margin-right: var(--mb-1);
     }
 
-
-
     #line1, #line2 {
         display: none;
     }
@@ -524,13 +641,9 @@ section {
 /* For medium devices */
 @media screen and (max-width: 720px) {
 
-
-
     .skills__container {
 
     }
-
-
 
     #line1, #line2 {
         display: none;
@@ -545,14 +658,8 @@ section {
 
 @media screen and (max-width: 1023px) {
 
-
-
-    
 }
 
 @media screen and (min-width: 1024px) {
-
-
-
 
 }
