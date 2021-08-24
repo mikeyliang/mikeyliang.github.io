@@ -71,11 +71,11 @@
 body.dark-theme {
      /* HSL color mode */
      --first-color-second: hsl(var(--hue-color), 30%, 10%);
-     --title-color: hsl(var(--hue-color), 10%, 95%);
-     --text-color: hsl(var(--hue-color), 10%, 75%);
-     --text-color-light: hsl(var(--hue-color), 20%, 80%);
+     --title-color: hsl(var(--hue-color), 10%, 85%);
+     --text-color: #939393;
+     --text-color-light: #939393;
      --input-color: hsl(var(--hue-color), 30%, 15%);
-     --body-color: hsl(var(--hue-color), 30%, 10%);
+     --body-color: #181818;
      --container-color: hsl(var(--hue-color), 30%, 15%);
      
 }
@@ -106,9 +106,6 @@ body.dark-theme {
 	margin: 0;
 }
 
-html {
-	scroll-behavior: smooth;
-}
 
 body {
 	margin: 0 0 var(--header-height) 0;
@@ -136,9 +133,6 @@ img {
 	height: auto;
 }
 
-section {
-    min-height: calc(100vh - 3px);
-}
 
 .vertical {
             border-left: 2px solid var(--text-color-light);
@@ -169,8 +163,11 @@ section {
 .section{
     padding: 2rem 0 4rem;
     scroll-snap-align: center;
-    scroll-snap-type: mandatory;
-    overflow-x: scroll;
+    height: 100vh;
+}
+
+.footer {
+    scroll-snap-align: center;
 }
 
 .section__title {
@@ -192,6 +189,9 @@ section {
     max-width: 768 px;
     margin-left: var(--mb-1-5);
     margin-left: var(--mb-1-5);
+    scroll-snap-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid {
@@ -326,9 +326,10 @@ section {
 }
 
 
-.home__blob {
-    width: 100%;
-    fill: #BAE6FF;
+.home-img {
+    width: auto;
+    height: 40vh;
+    position: relative;
 }
 
 
@@ -453,9 +454,8 @@ section {
 }
 
 .portfolio__image {
-    width: 55vw;
+    width: 60vw;
     position: relative;
-    margin-bottom: 10rem; 
 
 }
 
@@ -463,6 +463,9 @@ section {
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    top: 25%;
+    position: relative;
 }
 
 
@@ -596,9 +599,10 @@ section {
 
 /*========== SCROLL BAR ==========*/
 
-
 html {
-    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 /* total width */
@@ -627,7 +631,6 @@ html {
 
 /* set button(top and bottom of the scrollbar) */
 ::-webkit-scrollbar-button {display:none}
-
 
 
 /*==================== MEDIA QUERIES ====================*/
