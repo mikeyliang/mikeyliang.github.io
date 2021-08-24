@@ -4,8 +4,9 @@
 /* Validate if constant exists */
 
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
+/*===== SCROLL SECTION =====*/
+/* Changes number of which section scroll is in */
+
 
 
 /*==================== ACCORDION SKILLS ====================*/

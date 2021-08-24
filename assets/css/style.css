@@ -163,7 +163,7 @@ img {
 }
 
 .scrollsection {
-    position: absolute;
+    position: fixed;
     background-color: var(--body-color);
     font-family: "SF Mono Bold";
     font-size: var(--small-font-size);
