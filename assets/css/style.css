@@ -369,10 +369,11 @@ img {
     line-height: 35px;
 }
 
+
 .home__scroll {
-    position: absolute;
-    left: 38%;
-    bottom: 7.5%;
+    position: relative;
+    margin-top: 10vh;
+    
 }
 
 .home__scroll-button {
@@ -634,6 +635,7 @@ img {
     text-align: center;
     font-size: var(--smaller-font-size);
     font-weight: var(--font-semi-bold);
+    position: relative;
 }
 
 
@@ -719,9 +721,6 @@ html {
         margin-bottom: var(--mb-6);
     }
 
-    .home__scroll {
-        left: 20%;
-    }
 
 
     
@@ -757,9 +756,6 @@ html {
         margin-bottom: var(--mb-6);
     }
 
-    .home__scroll {
-        left: 35%;
-    }
 
     
 }
@@ -779,9 +775,6 @@ html {
         margin-bottom: var(--mb-3);
     }
 
-    .home__scroll {
-        left: 43%;
-    }
 
 
 }
@@ -833,10 +826,6 @@ html {
         margin-bottom: var(--mb-3);
     }
 
-    .home__scroll {
-        bottom: 15%;
-        left: 61%;
-    }
 
     .portfolio__container {
         top: 25%;
@@ -891,11 +880,6 @@ html {
     .home__description {
         font-size: var(--h3-font-size);
         margin-bottom: var(--mb-3);
-    }
-
-    .home__scroll {
-        left: 65%;
-        bottom: 15%;
     }
 
     .portfolio__container {
