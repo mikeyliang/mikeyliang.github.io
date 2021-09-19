@@ -488,14 +488,6 @@ img {
     position: relative;
 }
 
-.portfolio__description {
-    margin-top: var(--mb-3);
-    flex-direction: row;
-    display: flex;
-    column-gap: var(--mb-1);
-    align-items: center;
-}
-
 @font-face {
     font-family:"Garamond Bold";
     src: url("../fonts/EB_Garamond/static/EBGaramond-Bold.ttf") format("truetype");
