@@ -8,26 +8,6 @@
 /* Changes number of which section scroll is in */
 
 
-
-/*==================== ACCORDION SKILLS ====================*/
-const skillsContent=document.getElementsByClassName('skills__content'),
-    skillsHeader=document.querySelectorAll('.skills__header')
-
-function toggleSkills() {
-    let itemClass=this.parentNode.className
-
-    for(i=0; i<skillsContent.length; i++) {
-        skillsContent[i].className='skills__content skills__close'
-    }
-    if (itemClass === 'skills__content skills__close') {
-        this.parentNode.className='skills__content skills__open'
-    }
-}
-
-skillsHeader.forEach((el) => {
-    el.addEventListener('click', toggleSkills)
-})
-
 /*==================== QUALIFICATION TABS ====================*/
 const tabs=document.querySelectorAll('[data-target]'),
     tabContents=document.querySelectorAll('[data-content]')
@@ -52,6 +32,7 @@ tabs.forEach(tab => {
 
 const overlay=document.getElementById('cuauvhover')
 const ponddepthoverlay=document.getElementById('ponddepthoverlay')
+const badmintonoverlay=document.getElementById('badmintonoverlay')
 
 const cuauvhover=document.getElementById('cuauvhoverimg')
 const cuauvlogo=document.getElementById('cuauvlogo')
@@ -61,8 +42,14 @@ const ponddepthhover=document.getElementById('ponddepthhoverimg')
 const ponddepthlogo=document.getElementById('ponddepthlogo')
 const portfolionumber2=document.getElementById('portfolionumber2')
 
+const badmintonplushhover=document.getElementById('badmintonplushoverimg')
+const badmintonhover=document.getElementById('badmintonlogooverimg')
+const badmintonlogo=document.getElementById('cornellbadminton')
+const portfolionumber3=document.getElementById('portfolionumber3')
+
 const one=document.getElementById('one');
 const two=document.getElementById('two');
+const three=document.getElementById('three');
 
 overlay.addEventListener("mouseenter", () => {
     cuauvhover.style.transition = "all 0.4s"
@@ -113,6 +100,36 @@ ponddepthoverlay.addEventListener("mouseleave", () => {
     ponddepthhover.style.opacity = "0"
     ponddepthlogo.style.opacity = "0"
     portfolionumber2.style.opacity = "0"
+})
+
+badmintonoverlay.addEventListener("mouseenter", () => {
+    badmintonplushhover.style.transition = "all 0.4s"
+    badmintonplushhover.style.opacity = "1"
+    badmintonhover.style.transition = "all 0.4s"
+    badmintonhover.style.opacity = "1"
+    portfolionumber3.style.opacity = "1"
+
+    if (document.body.classList.contains(darkTheme)) {
+        three.src="assets/img/num/03white.png"
+    } else {
+        three.src="assets/img/num/03.png"
+    }
+
+    setTimeout(function(){
+        badmintonhover.style.transition = "all 0.2s"
+        badmintonplushhover.style.transition = "all 0.2s"
+        badmintonlogo.style.opacity ="1"
+    }, 100); 
+
+})
+
+badmintonoverlay.addEventListener("mouseleave", () => {
+    badmintonplushhover.style.transition = "all 0.4s"
+    badmintonplushhover.style.opacity = "0"
+    badmintonhover.style.transition = "all 0.4s"
+    badmintonhover.style.opacity = "0"
+    badmintonlogo.style.opacity = "0"
+    portfolionumber3.style.opacity = "0"
 })
 
 
