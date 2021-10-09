@@ -609,6 +609,26 @@ img {
     left: 75%
 }
 
+#badmintonplushoverimg {
+    position: absolute;
+    width:35%;
+    height:35%;
+    left: 55%;
+    top: 30%;
+}
+
+#badmintonlogooverimg {
+    width:25%;
+    height:25%;
+    top: 40%;
+    left:20%;
+}
+
+#cornellbadminton {
+    top: 8%;
+    right: 3%;
+}
+
 #one {
     -webkit-filter: drop-shadow(5px 5px 10px var(--text-color));
     filter: drop-shadow(5px 5px 10px var(--text-color));
