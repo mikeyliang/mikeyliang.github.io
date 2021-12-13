@@ -909,3 +909,34 @@ html {
     }
 
 }
+
+
+@media screen and (max-height: 850px) {
+
+    #line1, #line2 {
+        display: none;
+    }
+
+    .home__scroll {
+        display:none
+    }
+
+    .social__media {
+        display:none
+    }
+
+    .email {
+        display:none
+    }
+
+    .designedby {
+        margin-top: 8rem;
+    }
+
+    .portfolio__image {
+        height: 40vh;
+        width: 40vw;
+   
+    }
+
+}
