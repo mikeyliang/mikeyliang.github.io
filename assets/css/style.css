@@ -109,6 +109,10 @@ body.dark-theme {
 	margin: 0;
 }
 
+html {
+    height: 100%;
+  
+  }
 
 body {
 	margin: 0 0 var(--header-height) 0;
@@ -116,7 +120,9 @@ body {
 	font-size: var(--normal-font-size);
 	background-color: var(--body-color);
 	color: var(--text-color);
+
 }
+
 
 h1, h2, h3 {
 	color: var(--title-color);
@@ -186,6 +192,7 @@ img {
 
 .footer {
     scroll-snap-align: center;
+    padding-bottom: 100px;
 }
 
 .section__title {
@@ -664,11 +671,13 @@ img {
 
 /*========== SCROLL BAR ==========*/
 
-html {
+
+main {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
+
 
 /* total width */
 
