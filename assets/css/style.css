@@ -353,7 +353,7 @@ img {
 .home__title {
     font-size: var(--big-font-size);
     font-family: "SF Mono Heavy";
-    margin-bottom: var(--mb-4-5);
+    margin-bottom: var(--mb-3);
 }
 
 .home__subtitle{
@@ -363,7 +363,7 @@ img {
 }
 
 .home__description {
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-1-5);
     margin-left: var(--mb-6);
     margin-right: var(--mb-6);
     line-height: 35px;
@@ -372,7 +372,7 @@ img {
 
 .home__scroll {
     position: relative;
-    margin-top: 10vh;
+    margin-top: 6vh;
     
 }
 
@@ -728,7 +728,7 @@ html {
 
 }
 
-@media screen and (max-width: 350px), (max-height: 850px) {
+@media screen and (max-width: 350px), (max-height: 900px) {
     .container {
         margin-left:  var(--mb-1);
         margin-right: var(--mb-1);
@@ -747,7 +747,7 @@ html {
     }
 
     .home-img {
-        height: 70vh;
+        height: 60vh;
     }
 
     .portfolio {
@@ -760,9 +760,8 @@ html {
     }
 
     .home__title {
-        margin-bottom: var(--mb-6);
+        margin-bottom: var(--mb-3);
     }
-
 
     .home__scroll {
         display:none
@@ -785,8 +784,7 @@ html {
     }
     
     .section {
-        margin-top: 20rem;
-        margin-bottom: 20rem;
+        height: 100vh;
     }
 
 }
@@ -799,7 +797,7 @@ html {
     }
 
     .home-img {
-        margin-bottom: var(--mb-3);
+        margin-bottom: var(--mb-1);
         height: auto;
         width: auto;
     }
@@ -817,7 +815,7 @@ html {
     }
 
     .home__title {
-        margin-bottom: var(--mb-6);
+        margin-bottom: var(--mb-3);
     }
 
 
@@ -836,7 +834,7 @@ html {
     }
     
     .home__img {
-        margin-bottom: var(--mb-3);
+        margin-bottom: var(--mb-1);
     }
 
 
@@ -887,7 +885,7 @@ html {
     
     .home__description {
         font-size: var(--h3-font-size);
-        margin-bottom: var(--mb-3);
+        margin-bottom: var(--mb-1-5);
     }
 
 
