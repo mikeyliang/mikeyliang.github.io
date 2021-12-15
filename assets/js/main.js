@@ -1,11 +1,13 @@
 /* PROJECT NUMBER */
 
 portfolio = document.querySelectorAll(".portfolio");
-top1 = portfolio[0].getBoundingClientRect().top
-top2 = portfolio[1].getBoundingClientRect().top
-top3 = portfolio[2].getBoundingClientRect().top
+boundline = 100
+top1 = portfolio[0].getBoundingClientRect().top - boundline
+top2 = portfolio[1].getBoundingClientRect().top - boundline
+top3 = portfolio[2].getBoundingClientRect().top - boundline
 
 var projectnumber = 0;
+document.getElementById("numportfolio").innerHTML = "- / " + portfolio.length
 snap = document.getElementById("snap")
 snap.addEventListener("scroll", function() {
     let scroll = snap.scrollTop;
@@ -19,7 +21,7 @@ snap.addEventListener("scroll", function() {
     } else {
         projectnumber = 0
     }
-    document.getElementById("numportfolio").innerHTML = projectnumber;
+    document.getElementById("numportfolio").innerHTML = projectnumber + " / "  + portfolio.length;
 }, false);
 
 
