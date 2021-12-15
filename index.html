@@ -4,89 +4,91 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=0.6, shrink-to-fit= no, user-scalable=0">
 
-	<!--==================== UNICONS ====================-->
+	<!--  Reference Unicons -->
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 	
-	<!--==================== SWIPER CSS ====================-->
-	<link rel="stylesheet" href="">
-	
-	<!--==================== CSS ====================-->
+	<!-- Reference CSS -->
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-	<!--==================== FONTS ==================-->
+	<!-- Reference File Fonts-->
 	<link rel="stylesheet" href="assets/fonts/sfmono/sfmono.css" type="text/css" />
 	<link rel="stylesheet" href="assets/fonts/menlo/menlo.css" type="text/css" />
 
+	<!-- Reference Logo IMG -->
 	<link rel="icon" href="assets/img/ml.png">
 
+	<!-- Title -->
 	<title>Mikey Portfolio Website</title>
 </head>
 <body>
-	<!--==================== HEADER ====================-->
+	<!-- HEADER -->
 	<header class="header" id="header">
+		<!--Navigation Bar-->
 		<nav class="nav container">
+			<!--Home HYPERLINK-->
 			 <a href="index.html" class="nav__logo">
 				<img src="assets/img/ml.png" alt="logo" class="img-logo" id="logo">
 			 </a>
-
+			 <!--Light/Dark Toggle-->
 			 <div class="nav__btns">
 				<i class="uil uil-wind-moon change-theme" id="theme-button"></i>
 			 </div>
-
 		</nav>
 	</header>
 
-	<!--==================== MAIN ====================-->
+	<!-- MAIN -->
 	<main class="main">
+		<!-- Scroll Snap Container-->
 		<div class = "snapscroll">
-			<!--==================== HOME ====================-->
+			<!-- HOME -->
 			<section class="home section" id="home">
 				<div class="home__container container grid">
 					<div class="home__content grid">
+						<!-- Left Veritcal Line-->
 						<div class="line1">
 							<div class="vertical" id="line1"></div>
 						</div>
-
+						<!-- Right Veritcal Line-->
 						<div class="line2">
 							<div class="vertical" id="line2"></div>
 						</div>
-
+					    <!-- Front Image -->
 						<div class="home__img">
 							<img src="assets/img/mikeymlwhite.png" alt="mikeyml" class="home-img">
 						</div>
 
-						
-
+						<!-- Social Media Buttons -->
 						<div class="social__media">
-							
+							<!-- Linkedin -->
 							<a href="https://www.linkedin.com/in/michael-liang-3686a01a0/" target="_blank" rel="noopener noreferrer" class="social__media-icon" id="linkedin">
 								<i class="uil uil-linkedin-alt"></i>
 								<img src="assets/img/linkedin.png" alt="linkedin" id="linkedin-img">
 							</a>
-
+							<!-- Github -->
 							<a href="https://github.com/mikeyliang" target="_blank" rel="noopener noreferrer" class="social__media-icon" id="github">
 								<i class="uil uil-github-alt"></i>
 								<img src="assets/img/github.png" alt="github" id="github-img">
 							</a>
-
+							<!-- Instagram -->
 							<a href="https://www.instagram.com/mikey.liang/?hl=en" target="_blank" rel="noopener noreferrer" class="social__media-icon" id="instagram">
 								<i class="uil uil-instagram"></i>
 								<img src="assets/img/instagram.png" alt="instagram" id="instagram-img">
 							</a>
 
+							<!-- Facebook -->
 							<a href="https://www.facebook.com/profile.php?id=100006120256125" target="_blank" rel="noopener noreferrer" class="social__media-icon" id="facebook">
 								<i class="uil uil-facebook-f"></i>
 								<img src="assets/img/facebook.png" alt="facebook" id="facebook-img">
 							</a>
 						</div>
-						
-						
 
+						<!-- Profile Data -->
 						<div class="home__data">
 							<h3 class="home__subtitle">Hey there, it's</h3>
 							<h1 class="home__title">Michael Liang.</h1>
 							<p class="home__description">I'm a Sophomore at Cornell and I love to create, design, and innovate. </p>
+							<!-- Scroll Button -->
 							<div class="home__scroll">
 								<a href="#portfolio1" class="home__scroll-button button--flex">
 									<i class="uil uil-mouse-alt home__scroll-mouse"></i>
@@ -96,139 +98,110 @@
 							</div>
 						</div>
 						
-					
-						
-
+						<!-- Experimental Scroll Section Number (e.g Proj 2/3)-->
 						<div class="scrollsection">
 							<h1 class="scrollsection__num" id="numportfolio"></h1>
 						</div>
 
+						<!--Send To Email-->
 						<div class="email">
 							<a href="mailto:ml2226@cornell.edu" class="email-name">
 								ml2226@cornell.edu
 							</a>
-
 						</div>
 					</div>
-
-					
 				</div>
 			</section>
 
-			<!--==================== PORTFOLIO ====================-->
+			<!-- PORTFOLIO 1-->
 			<section class="portfolio  section" id="portfolio1">
-
+				<!--First Portfolio Section-->
 				<div class="portfolio__container" id="portfolio1-section">
-
+					<!--Project Resources-->
 					<a href="https://drive.google.com/drive/folders/14bhnkdUjLfMf415sIR6GUATK77UGwm06?usp=sharing" target="_blank" rel="noopener noreferrer" class="downloables" id="cuauvdrive">
-			
+						<!--Image-->
 						<div class="portfolio__image">
 							<img src="assets/img/cuauvcams/auroracamsbackimage.jpg" alt="CUAUV Cams Back" class="image__img">
-
+							<!--Image on Hover-->
 							<div class="image__overlay-bottom"  id="cuauvhoverimg">
 								<img src="assets/img/cuauvcams/atlascamsfront.png" alt="CUAUV Cams Hover" class="hover__image">
 							</div>
-
+							<!--Title on Hover-->
 							<div class="image__overlay-title" id="cuauvlogo">
 								<img src="assets/img/cuauvcams/cuauvlogo.png" alt="CUAUV logo" class="hover__image">
 							</div>
-
+							<!--Project Number on Hover-->
 							<div class="image__overlay-number" id="portfolionumber1">
 								<!-- font-family: unispace bold, font-size: 500, border-width (white): 5px-->
 								<img src="assets/img/num/01.png" alt="01" class="hover__image", id="one">
 							</div>
-
-							
-
 							<div class="overlay" id="cuauvhover"></div>
-						
 						</div>
 					</a>
-
 				</div>
-
-				
-
-				
-
 			</section>
+
+			<!-- PORTFOLIO 2-->
 			<section class="portfolio  section" id="portfolio2">
-
+				<!--Second Portfolio Section-->
 				<div class="portfolio__container" id="portfolio2-section">
-
+					<!--Project Resources-->
 					<a href="https://drive.google.com/drive/folders/1BYbcCI_KabHYyqUkRznVOJTjjHMaYIe8?usp=sharing" target="_blank" rel="noopener noreferrer" class="downloables" id="cuauvdrive">
-
+						<!--Image-->
 						<div class="portfolio__image">
 							<img src="assets/img/ponddepth/ponddepthbackgroundimg.png" alt="CUAUV Cams Back" class="image__img">
-
+							<!--Image on Hover-->
 							<div class="image__overlay-bottom"  id="ponddepthhoverimg">
 								<img src="assets/img/ponddepth/ponddepthboxoverall.png" alt="CUAUV Cams Hover" class="hover__image">
 							</div>
-
+							<!--Title on Hover-->
 							<div class="image__overlay-title" id="ponddepthlogo">
 								<img src="assets/img/ponddepth/koi1.png" alt="CUAUV logo" class="hover__image">
 							</div>
-
+							<!--Project Number on Hover-->
 							<div class="image__overlay-number" id="portfolionumber2">
 								<!-- font-family: unispace bold, font-size: 500, border-width (white): 5px-->
 								<img src="assets/img/num/02.png" alt="02" class="hover__image", id="two">
 							</div>
-
-							
-
 							<div class="overlay" id="ponddepthoverlay"></div>
-						
 						</div>
-
 					</a>
-
 				</div>
-
-
-
 			</section>
 
+			<!-- PORTFOLIO 3-->
 			<section class="portfolio  section" id="portfolio3">
-
+				<!--Third Portfolio Section-->
 				<div class="portfolio__container" id="portfolio3-section">
-
+					<!--Project Resources-->
 					<a href="" target="_blank" rel="noopener noreferrer" class="downloables" id="badmintondrive">
-
+						<!--Image-->
 						<div class="portfolio__image">
 							<img src="assets/img/badminton/badminton.png" alt="Badminton" class="image__img">
-
+							<!--Image on Hover-->
 							<div class="image__overlay-bottom"  id="badmintonplushoverimg">
 								<img src="assets/img/badminton/badmintonplush.png" alt="CUBAD plush" class="hover__image">
 							</div>
-
+							<!--Image on Hover-->
 							<div class="image__overlay-bottom"  id="badmintonlogooverimg">
 								<img src="assets/img/badminton/cornellbadminton.png" alt="CUBAD" class="hover__image">
 							</div>
-
+							<!--Title on Hover-->
 							<div class="image__overlay-title" id="cornellbadminton">
 								<img src="assets/img/badminton/cornellbadmintonlogo.png" alt="cornell badminton logo" class="hover__image">
 							</div>
-
+							<!--Project Number on Hover-->
 							<div class="image__overlay-number" id="portfolionumber3">
 								<!-- font-family: unispace bold, font-size: 500, border-width (white): 5px-->
 								<img src="assets/img/num/03.png" alt="03" class="hover__image", id="three">
 							</div>
-
-							
-
-							<div class="overlay" id="badmintonoverlay"></div>
-						
+							<div class="overlay" id="badmintonoverlay"></div>			
 						</div>
-
 					</a>
-
 				</div>
-
-
-
 			</section>
 
-			<!--==================== FOOTER ====================-->
+			<!-- FOOTER -->
 			<footer class="footer">
 				<h3 class="designedby">Designed and Built by Michael Liang using HTML, CSS, and JS</h3>
 			</footer>
@@ -237,15 +210,8 @@
 
 	</main>
 
-	
-	
-	<!--==================== SCROLL TOP ====================-->
-	
 
-	<!--==================== SWIPER JS ====================-->
-	<script src=""></script>
-
-	<!--==================== MAIN JS ====================-->
+	<!-- Reference JS -->
 	<script src="assets/js/main.js"></script>
 </body>
 </html>
