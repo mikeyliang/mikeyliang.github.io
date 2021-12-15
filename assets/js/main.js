@@ -1,16 +1,29 @@
-/*==================== SOCIAL ICON SHOW ====================*/
+/* PROJECT NUMBER */
 
-/*===== DISABLE ZOOM =====*/
-/* Validate if constant exists */
+portfolio = document.querySelectorAll(".portfolio");
+top1 = portfolio[0].getBoundingClientRect().top
+top2 = portfolio[1].getBoundingClientRect().top
+top3 = portfolio[2].getBoundingClientRect().top
+
+var projectnumber = 0;
+snap = document.getElementById("snap")
+snap.addEventListener("scroll", function() {
+    let scroll = snap.scrollTop;
+    
+    if (scroll >= top3) {
+        projectnumber = 3
+    } else if (scroll >= top2) {
+        projectnumber = 2
+    } else if (scroll >= top1) {
+        projectnumber = 1
+    } else {
+        projectnumber = 0
+    }
+    document.getElementById("numportfolio").innerHTML = projectnumber;
+}, false);
 
 
-
-
-/*===== SCROLL SECTION =====*/
-/* Changes number of which section scroll is in */
-
-
-/*==================== QUALIFICATION TABS ====================*/
+/* QUALIFICATION */
 const tabs=document.querySelectorAll('[data-target]'),
     tabContents=document.querySelectorAll('[data-content]')
 
@@ -30,7 +43,7 @@ tabs.forEach(tab => {
 })
 
 
-/*==================== PORTFOLIO  ====================*/
+/* PORTFOLIO */
 
 const overlay=document.getElementById('cuauvhover')
 const ponddepthoverlay=document.getElementById('ponddepthoverlay')
@@ -136,7 +149,7 @@ badmintonoverlay.addEventListener("mouseleave", () => {
 
 
 
-/*==================== DARK LIGHT THEME ====================*/
+/* DARK/LIGHT TOGGLE*/
 
 const themeButton=document.getElementById('theme-button')
 const darkTheme='dark-theme'
