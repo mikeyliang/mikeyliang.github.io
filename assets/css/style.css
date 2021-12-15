@@ -50,7 +50,7 @@
 
     /*========== z index ==========*/
     --z-tooltip: 10;
-    --z-fixed: 100;
+    --z-fixed: -1;
     --z-modal: 1000;
 }
 
@@ -716,7 +716,7 @@ img {
 /* For small devices */
 
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 500px), (max-height: 400px) {
 
     .portfolio__container {
         margin-left:  var(--mb-1);
@@ -793,9 +793,12 @@ img {
         margin-top: 8rem;
     }
 
-    .home__data {
+   
+
+    .home__description, .home__scroll {
         display: none;
     }
+    
     
     .section {
         height: 100vh;
@@ -814,6 +817,8 @@ img {
         margin-bottom: var(--mb-1);
         height: auto;
         width: auto;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
  
     #line1, #line2 {
@@ -826,6 +831,11 @@ img {
 
     .home__title {
         margin-bottom: var(--mb-3);
+    }
+
+    .home__description {
+        margin-right: var(--mb-2-5);
+        margin-left: var(--mb-2-5);
     }
 
 
