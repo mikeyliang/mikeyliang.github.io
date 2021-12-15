@@ -50,7 +50,7 @@
 
     /*========== z index ==========*/
     --z-tooltip: 10;
-    --z-fixed: -1;
+    --z-fixed: 1;
     --z-modal: 1000;
 }
 
@@ -89,6 +89,7 @@ body.dark-theme {
     align-items: center;
     margin-right: var(--mb-1-5);
     margin-top: var(--mb-1);
+    z-index: 2;
 }
 
 .change-theme {
