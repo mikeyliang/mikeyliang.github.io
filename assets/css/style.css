@@ -50,7 +50,7 @@
 
     /*========== z index ==========*/
     --z-tooltip: 10;
-    --z-fixed: 1;
+    --z-fixed: 0;
     --z-modal: 1000;
 }
 
@@ -87,7 +87,7 @@ body.dark-theme {
 .nav__btns {
     display: flex;
     align-items: center;
-    margin-right: var(--mb-1-5);
+    margin-right: calc(1.5rem - 16px);
     margin-top: var(--mb-1);
     z-index: 2;
 }
@@ -227,7 +227,7 @@ img {
 }
 
 .header {
-    width: 100%;
+    width: calc(100% - 16px);
     position: fixed;
     top: 0;
     left: 0;
@@ -333,8 +333,8 @@ img {
 
 #linkedin-img, #github-img, #instagram-img, #facebook-img {
     position: fixed;
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 2.3rem;
+    height: 2.3rem;
     transform: translate(-75%,-20%);
     opacity: 0;
     transition: all 0.4s ease;
@@ -388,11 +388,27 @@ img {
 
 .home__scroll-button {
     color: var(--first-color);
-    transition: .5s;
+    
+    animation-name: scrollupdown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
+/*
 .home__scroll-button:hover {
     transform: translateY(.5rem);
+}
+
+*/
+
+@keyframes scrollupdown {
+
+    0%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(1rem);
+      }
 }
 
 .home__scroll-mouse  {
@@ -690,12 +706,14 @@ img {
     background-color: var(--body-color);
     width:16px;
     transform: translateX(20%);
+   
     
 }
 
 /* background of the scrollbar except button or resizer */
 ::-webkit-scrollbar-track {
     background-color:var(--body-color);
+    
     
 }
 
@@ -706,6 +724,7 @@ img {
     border-radius:16px;
     border:5px solid var(--body-color);
     -webkit-transform: translateX(20%);
+
 }
 
 /* set button(top and bottom of the scrollbar) */
@@ -717,6 +736,10 @@ img {
 
 
 @media screen and (max-height: 500px), (max-height: 400px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     .portfolio__container {
         margin-left:  var(--mb-1);
@@ -743,6 +766,11 @@ img {
 }
 
 @media screen and (max-width: 350px), (max-height: 750px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     .container {
         margin-left:  var(--mb-1);
         margin-right: var(--mb-1);
@@ -793,12 +821,9 @@ img {
         margin-top: 8rem;
     }
 
-   
-
     .home__description, .home__scroll {
         display: none;
     }
-    
     
     .section {
         height: 100vh;
