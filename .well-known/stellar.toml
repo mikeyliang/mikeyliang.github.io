@@ -1,0 +1,7 @@
+VERSION="2.4.1"
+
+SQ02_EASTER_EGG="Log into series 2 of Stellar Quest then visit quest.stellar.org/series2. Finally drag and drop your Stellar Quest series 2 badge PNG images onto the screen. Enjoy!"
+#           swift=<swift code of receiving bank>
+#           acct=<recipient account number at receiving bank>
+# Minimum Amount Forward: $2 USD
+# Maximum Amount Forward: $10000 USD
