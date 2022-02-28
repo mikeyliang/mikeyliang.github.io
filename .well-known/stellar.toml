@@ -1,59 +1,6 @@
 VERSION="2.4.1"
 
-NETWORK_PASSPHRASE="TESTNET"
-FEDERATION_SERVER="https://api.domain.com/federation"
-TRANSFER_SERVER="https://api.domain.com"
-SIGNING_KEY="GBDPVP3ZWHXSUCJENYPE3JPA4RZUN74QW2N4QRAIKRNVPXGJWIWXKTBS"
-HORIZON_URL="https://horizon-testnet.stellar.org"
-ACCOUNTS=[
-"GBDPVP3ZWHXSUCJENYPE3JPA4RZUN74QW2N4QRAIKRNVPXGJWIWXKTBS",
-]
-
-[DOCUMENTATION]
-ORG_NAME="Organization Name"
-ORG_DBA="Organization DBA"
-ORG_URL="https://www.domain.com"
-ORG_LOGO="https://www.domain.com/awesomelogo.png"
-ORG_DESCRIPTION="Description of issuer"
-ORG_PHYSICAL_ADDRESS="123 Sesame Street, New York, NY 12345, United States"
-ORG_PHYSICAL_ADDRESS_ATTESTATION="https://www.domain.com/address_attestation.jpg"
-ORG_PHONE_NUMBER="1 (123)-456-7890"
-ORG_PHONE_NUMBER_ATTESTATION="https://www.domain.com/phone_attestation.jpg"
-ORG_KEYBASE="accountname"
-ORG_TWITTER="orgtweet"
-ORG_GITHUB="orgcode"
-ORG_OFFICIAL_EMAIL="support@domain.com"
-
-[[PRINCIPALS]]
-name="Michael Liang"
-email="liangmichael27822@gmail.com"
-github="mikeyliang"
-
-# asset with meta info
-[[CURRENCIES]]
-code="SQ02_EASTER_EGG"
-issuer="GBDPVP3ZWHXSUCJENYPE3JPA4RZUN74QW2N4QRAIKRNVPXGJWIWXKTBS"
-name="SQ02_EASTER_EGG"
-desc="Log into series 2 of Stellar Quest then visit quest.stellar.org/series2. Finally drag and drop your Stellar Quest series 2 badge PNG images onto the screen. Enjoy!"
-
-[[VALIDATORS]]
-ALIAS="domain-us"
-DISPLAY_NAME="Domain United States"
-HOST="core-us.domain.com:11625"
-PUBLIC_KEY="GBDPVP3ZWHXSUCJENYPE3JPA4RZUN74QW2N4QRAIKRNVPXGJWIWXKTBS"
-HISTORY="http://history.domain.com/prd/core-live/core_live_003/"
-
-# optional extra information for humans
-# Useful place for anchors to detail various policies and required info
-
-###################################
-# Required compliance fields:
-#      name=<recipient name>
-#      addr=<recipient address>
-# Federation Format:
-#        <phone number>*anchor.com
-#        Forwarding supported by sending to: forward*anchor.com
-#           forward_type=bank_account
+SQ02_EASTER_EGG="Log into series 2 of Stellar Quest then visit quest.stellar.org/series2. Finally drag and drop your Stellar Quest series 2 badge PNG images onto the screen. Enjoy!"
 #           swift=<swift code of receiving bank>
 #           acct=<recipient account number at receiving bank>
 # Minimum Amount Forward: $2 USD
